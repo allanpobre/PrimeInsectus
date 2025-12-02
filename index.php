@@ -1,9 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
-    <!-- Conteúdo Principal -->
     <main class="w-full max-w-6xl px-4 pt-32 pb-20 flex flex-col gap-10">
         
-        <!-- Header -->
         <div class="text-center mb-4">
             <h1 class="text-6xl md:text-8xl font-bold text-liquid tracking-tighter drop-shadow-2xl">
                 Prime Insectus
@@ -11,9 +9,7 @@
             <p class="text-white/60 font-light mt-2 tracking-widest text-sm uppercase">Pioneirismo em Alimentação Viva & Desidratada</p>
         </div>
 
-        <!-- Seção Hero -->
         <div class="flex flex-col lg:flex-row gap-8 items-stretch justify-center">
-            <!-- Card Manifesto -->
             <div class="w-full lg:w-5/12 liquid-glass rounded-3xl p-8 relative overflow-hidden group min-h-[500px] flex flex-col justify-end">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
                 <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:scale-110 transition-transform duration-1000" alt="Natureza">
@@ -28,9 +24,7 @@
                 </div>
             </div>
 
-            <!-- Info Grid -->
             <div class="w-full lg:w-7/12 flex flex-col gap-6">
-                <!-- Info 1 -->
                 <div class="flex-1 liquid-glass rounded-3xl p-6 flex flex-row gap-6 items-center hover:bg-white/5 transition-colors">
                     <div class="h-24 w-24 min-w-[6rem] rounded-full bg-white/5 flex items-center justify-center border border-white/10"><i class="fa-solid fa-wheat-awn text-3xl text-accent-green"></i></div>
                     <div>
@@ -38,7 +32,6 @@
                         <p class="text-sm text-gray-400">Insetos alimentados com vegetais e cereais premium 24h antes do envio.</p>
                     </div>
                 </div>
-                <!-- Info 2 -->
                 <div class="flex-1 liquid-glass rounded-3xl p-6 flex flex-row gap-6 items-center hover:bg-white/5 transition-colors">
                     <div class="h-24 w-24 min-w-[6rem] rounded-full bg-white/5 flex items-center justify-center border border-white/10"><i class="fa-solid fa-box-open text-3xl text-accent-green"></i></div>
                     <div>
@@ -46,7 +39,6 @@
                         <p class="text-sm text-gray-400">Opções para estímulo de caça ou praticidade do dia-a-dia.</p>
                     </div>
                 </div>
-                <!-- Call to Action -->
                 <div class="h-auto liquid-glass rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center gap-6 relative overflow-hidden">
                     <div class="absolute inset-0 bg-accent-green/5 z-0"></div>
                     <div class="z-10 text-center md:text-left">
@@ -58,30 +50,50 @@
             </div>
         </div>
 
-        <!-- Seção: Por que escolher (3 Cards) -->
-        <section class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/5 transition-all">
-                <i class="fa-solid fa-dumbbell text-4xl text-accent-green mb-4"></i>
-                <h3 class="text-xl font-bold text-white">Super Proteína</h3>
-                <p class="text-sm text-gray-400 mt-2">69% de proteína bruta, superando carnes tradicionais.</p>
+        <section class="mt-8">
+            <div class="flex justify-between items-end mb-6 px-2">
+                <h2 class="text-2xl font-bold text-white">Por que Prime Insectus?</h2>
+                <a href="porque-insetos.php" class="text-accent-green text-sm hover:text-white transition-colors font-bold uppercase tracking-wider">
+                    Entenda a Ciência <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
             </div>
-            <div class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/5 transition-all">
-                <i class="fa-solid fa-droplet text-4xl text-blue-400 mb-4"></i>
-                <h3 class="text-xl font-bold text-white">Sustentabilidade</h3>
-                <p class="text-sm text-gray-400 mt-2">Consome 2000x menos água que a pecuária.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="porque-insetos.php" class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/10 transition-all group cursor-pointer">
+                    <div class="group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-dumbbell text-4xl text-accent-green mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-accent-green transition-colors">Super Proteína</h3>
+                    <p class="text-sm text-gray-400 mt-2">69% de proteína bruta, superando carnes tradicionais e rações comuns.</p>
+                </a>
+
+                <a href="porque-insetos.php" class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/10 transition-all group cursor-pointer">
+                    <div class="group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-droplet text-4xl text-blue-400 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Sustentabilidade</h3>
+                    <p class="text-sm text-gray-400 mt-2">Consome 2000x menos água que a pecuária. O planeta agradece.</p>
+                </a>
+
+                <a href="porque-insetos.php" class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/10 transition-all group cursor-pointer">
+                    <div class="group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-dna text-4xl text-purple-400 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Instinto Natural</h3>
+                    <p class="text-sm text-gray-400 mt-2">Estimula comportamento de caça, reduz estresse e melhora a imunidade.</p>
+                </a>
             </div>
-            <div class="liquid-glass rounded-2xl p-6 text-center hover:bg-white/5 transition-all">
-                <i class="fa-solid fa-dna text-4xl text-purple-400 mb-4"></i>
-                <h3 class="text-xl font-bold text-white">Instinto Natural</h3>
-                <p class="text-sm text-gray-400 mt-2">Estimula comportamento de caça e reduz estresse.</p>
+            
+            <div class="md:hidden mt-6 text-center">
+                <a href="porque-insetos.php" class="inline-block w-full py-3 rounded-xl border border-white/20 text-white font-bold hover:bg-white/5">
+                    Ler Matéria Completa
+                </a>
             </div>
         </section>
 
-        <!-- Curiosidades (Links) -->
         <section class="mt-4 liquid-glass rounded-3xl p-8">
             <h2 class="text-2xl font-bold text-white mb-6">Curiosidades por Espécie</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Répteis -->
                 <a href="repteis.php" class="relative group cursor-pointer overflow-hidden rounded-2xl h-64 bg-black/40 block">
                     <img src="https://images.unsplash.com/photo-1598460677894-672522730332?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute bottom-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent">
@@ -89,7 +101,6 @@
                         <p class="text-xs text-gray-300 mt-1 line-clamp-2">Geckos, Pogonas & Iguanas.</p>
                     </div>
                 </a>
-                <!-- Anfíbios -->
                 <a href="anfibios.php" class="relative group cursor-pointer overflow-hidden rounded-2xl h-64 bg-black/40 block">
                     <img src="https://images.unsplash.com/photo-1597849122557-01a24d852cb7?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute bottom-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent">
@@ -97,7 +108,6 @@
                         <p class="text-xs text-gray-300 mt-1 line-clamp-2">Sapos, Rãs & Salamandras.</p>
                     </div>
                 </a>
-                <!-- Aves -->
                 <a href="aves.php" class="relative group cursor-pointer overflow-hidden rounded-2xl h-64 bg-black/40 block">
                     <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute bottom-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent">
@@ -108,7 +118,6 @@
             </div>
         </section>
 
-        <!-- Newsletter -->
         <section class="mt-10 mb-10 liquid-glass rounded-3xl p-8 text-center relative overflow-hidden">
             <div class="relative z-10 max-w-2xl mx-auto">
                 <i class="fa-regular fa-paper-plane text-4xl text-accent-green mb-4"></i>
